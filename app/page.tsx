@@ -27,8 +27,6 @@ export default function Page() {
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
-          <div className={classnames(styles.shape, "bg-blue-500")}></div>
-          <div className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black" />
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
@@ -41,13 +39,7 @@ export default function Page() {
             alt="Screenshots of the dashboard project showing desktop version"
           />
         </div>
-        {/* testing fonts */}
-        {/* <p
-          className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
-        >
-          My new font
-        </p>
-        <p className={inter.className}>My new font</p> */}
+        
       </div>
     </main>
   );
