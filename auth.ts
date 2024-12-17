@@ -7,7 +7,6 @@ import type { User } from '@/app/lib/definitions';
 import bcrypt from 'bcrypt';
 
 const client = await db.connect();
-
  
 async function getUser(email: string): Promise<User | undefined> {
   try {
@@ -27,6 +26,9 @@ export const { auth, signIn, signOut } = NextAuth({
         const parsedCredentials = z
           .object({ email: z.string().email(), password: z.string().min(6) })
           .safeParse(credentials);
+
+        console.log('parsedCredentials:', parsedCredentials);
+
 
 
         if (parsedCredentials.success) {

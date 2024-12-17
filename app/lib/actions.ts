@@ -89,6 +89,8 @@ export async function authenticate(
           return 'Something went wrong.';
       }
     }
+    console.log('error signing in: ', error);
+
     throw error;
   }
 }
